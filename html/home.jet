@@ -59,7 +59,7 @@
             console.log("There was an error: " + error);
         };
         socket.onmessage = (msg) => {
-            console.log(msg);
+            console.log("Got message: " + msg);
         };
     })
 </script>
