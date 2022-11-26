@@ -1,0 +1,13 @@
+[mbp2022 15:43:03:35] go get -u github.com/CloudyKit/jet/v6
+go: downloading github.com/CloudyKit/jet v2.1.2+incompatible
+go: downloading github.com/CloudyKit/jet/v6 v6.1.0
+go: downloading github.com/CloudyKit/fastprinter v0.0.0-20200109182630-33d98a066a53
+go: added github.com/CloudyKit/fastprinter v0.0.0-20200109182630-33d98a066a53
+go: added github.com/CloudyKit/jet/v6 v6.1.0
+[mbp2022 15:43:26:35] go get -u github.com/bmizerany/pat
+go: downloading github.com/bmizerany/pat v0.0.0-20210406213842-e4b6760bdd6f
+go: added github.com/bmizerany/pat v0.0.0-20210406213842-e4b6760bdd6f
+[mbp2022 15:44:03:35] go get -u github.com/gorilla/websocket
+go: downloading github.com/gorilla/websocket v1.5.0
+go: added github.com/gorilla/websocket v1.5.0
+[mbp2022 15:44:27:35]
