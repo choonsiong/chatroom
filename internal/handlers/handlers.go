@@ -27,10 +27,22 @@ func Home(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+type WebSocketConnection struct {
+	*websocket.Conn
+}
+
 type WsJsonResponse struct {
 	Action      string `json:"action"`
 	Message     string `json:"message"`
 	MessageType string `json:"message_type"`
+}
+
+// Websocket payload sent from web browser
+type WsPayload struct {
+	Action   string              `json:"action"`
+	Message  string              `json:"message"`
+	Username string              `json:"username"`
+	Conn     WebSocketConnection `json:"-"`
 }
 
 func WsEndPoint(w http.ResponseWriter, r *http.Request) {
@@ -54,6 +66,5 @@ func RenderPage(w http.ResponseWriter, templateName string, data jet.VarMap) err
 	if err != nil {
 		return err
 	}
-
 	return view.Execute(w, data, nil)
 }
